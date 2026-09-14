@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  background-color: #edf0f2;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+form div {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #aaaaaa;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #236b73;
+  outline: none;
+}
+
+input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+
+input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  color: white;
+  background-color: #236b73;
+  border: none;
+  cursor: pointer;
+}
