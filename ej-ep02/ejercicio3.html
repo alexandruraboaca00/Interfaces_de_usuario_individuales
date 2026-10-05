@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tareas</title>
+  <link rel="stylesheet" href="estilo/comun.css">
+  <script src="script/ejercicio3.js" defer></script>
+</head>
+<body>
+  <main>
+    <form id="crear-lista">
+      <label for="titulo">Título de la lista</label>
+      <input id="titulo" required>
+      <button type="submit">Crear lista</button>
+    </form>
+    <section id="lista" hidden>
+      <h1 id="titulo-lista"></h1>
+      <form id="anadir-tarea">
+        <label for="tarea">Nueva tarea</label>
+        <input id="tarea" required>
+        <button id="anadir" type="submit">Añadir tarea</button>
+      </form>
+      <p id="error" class="error" role="alert"></p>
+      <ul id="tareas"></ul>
+    </section>
+  </main>
+</body>
+</html>
